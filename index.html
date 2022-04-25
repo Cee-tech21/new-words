@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+    <title>Dictionary project</title>
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="mx-auto bg-dark" style="max-width: 720px;">
+    <section class="container">
+        <div class="row text-center">
+            <p class="text-white fs-1 mt-4 fw-bold mx-auto">
+                21st Century Definitions</p>
+        </div>
+    </section>
+    
+    <aside class="bg-dark">
+    <section class="container">
+        <div class="row bg-dark">
+            <form class="d-flex pt-4">
+                <input class="form-control me-2 fs-4" type="search" 
+                        placeholder="Search for definition of any word"
+                         aria-label="Search" id="search-el" 
+                         onkeypress="">
+                <button class="btn btn-outline-light fs-4" 
+                    type="button" id="search-btn">                    
+                    Search</button>
+            </form>
+        </div>
+    </section>
+    </aside>
+
+    <main class="container my-5">
+        <div class="bg-light p-5 rounded" id="display-defs-div">
+            <h1>Your Search: <br>
+                <span id="display-searched-word-el"
+                 class="fst-italic">
+
+                </span> 
+            </h1>
+            
+            
+        </div>
+        <div class="bg-light p-5 rounded mt-3">
+            <h1>Word of the Day: <br>
+                 <span id="word-of-day-el" class="fst-italic"></span> 
+            </h1>
+            <p class="lead">
+                This is a randomly generated word to 
+                serve as a suggestion. 
+                You can search for the meaning of this word!!!</p>
+            <a class="btn btn-lg btn-primary" role=""
+                id="display-random">
+                Random word</a>
+        </div>
+    </main>
+    <script src="./Bootstrap/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
